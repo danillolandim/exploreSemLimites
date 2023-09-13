@@ -1,0 +1,183 @@
+*{
+  margin: 0;
+  font-family: 'Mulish', sans-serif;
+}
+:root {
+  font-size: 16px;
+  --base-font: 'Mulish', sans-serif;
+
+  /* Colors */
+  --white: #ffffff;
+  --light-gray: #f9f4fb;
+  --accent-color: #b52184;
+  --text-base-color: #312d64;
+  --gradient-background: linear-gradient(96.21deg, #343193 0%, #302c63 99.68%);
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+header h1{
+  color: var(--accent-color);
+  margin-left: 6.9rem ;
+  margin-top: 18.75rem;
+  font-weight: 900;
+  font-size: 3rem;
+}
+header h3{
+  margin-left: 6.9rem;
+  font-weight: 400;
+  color:var(--text-base-color);
+  font-size: 1.8rem;
+}
+header a img{
+  margin-top: 9.4rem;
+  margin-left:  6.9rem;
+  border: 4px solid #B52184;
+  height: 3.75rem;
+  padding: 0.9rem 0.3rem ;
+  border-radius: 4.35rem;
+}
+
+header img{
+  margin-right: 6.25rem;
+}
+
+main{
+  background-color:var(--text-base-color);
+  display: flex;
+  justify-content: center;
+}
+
+.card{
+  background-color: var(--white);
+  height: 28.12rem;
+  width: 21.875rem;
+  border-radius: 1.25rem;
+  margin: 3.75rem;
+  padding: 2rem;
+}
+
+.card h2{
+  color: var(--accent-color);
+  font-weight: 900;
+  margin-top: 3.125rem;
+  margin-bottom: 1.25rem;
+  font-size: 2rem;
+}
+
+.card p {
+  font-size: 1.25rem;
+}
+
+.starsFooter{
+  display: flex;
+  justify-content: space-between;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  margin-top: 3.75rem;
+  margin-left: 12.5rem;
+
+}
+.form h1{
+ color: var(--accent-color);
+ font-size: 2.5rem;
+ font-weight: 900; 
+}
+.form input{
+  display: block;
+  margin-top: 1.25rem;
+  width: 25rem;
+  height: 2.18rem;
+  border-radius: 0.625rem;
+  padding-left: 0.625rem;
+
+}
+
+.form textarea{
+  margin-top: 1.25rem;
+  width: 24.375rem;
+  height: 6.25rem;
+  border-radius:0.625rem;
+  padding: 0.625rem;
+  
+}
+input.btn_submit{
+  width: 11.25rem;
+  height:2.5rem;
+  background-color: var(--text-base-color);
+  color: var(--light-gray);
+  cursor: pointer;
+  border: none;
+}
+
+footer p{
+background-color: var(--text-base-color);
+ padding: 1.25rem ;
+ text-align: center;
+ color: var(--white);
+}
+
+@media (max-width: 720px) {
+ 
+  header{
+    flex-direction: column-reverse;
+    justify-content: start;
+ }
+
+header img{
+  margin: 0;
+  justify-content: center;
+}
+header h1{
+  text-align: center;
+  margin: 0;
+  font-size: 2rem;
+}
+header h3{
+  font-size: 1.25rem;
+  text-align: center;
+  margin: 0;
+}
+header a img{
+  margin: 10rem 10rem;
+}
+
+main{
+  flex-direction: column;
+}
+.card{
+  margin: 3rem auto;
+  height: 22rem;
+  width: 18rem;
+  padding: 1.25rem;
+}
+.card h2{
+  margin: 0;
+}
+
+.starsFooter img{
+  display: none;
+  justify-content: center;
+}
+
+.form{
+  margin: 0 auto;
+  padding: 3rem 1rem;
+}
+
+.form input, .form textarea{
+  width: 18rem; 
+}
+
+.form h1 {
+  font-size: 2rem;
+}
+
+}
